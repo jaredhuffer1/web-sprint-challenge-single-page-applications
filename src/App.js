@@ -1,11 +1,30 @@
-import React from "react";
+import React from 'react';
+import { Switch, Route, NavLink } from 'react-router-dom';
 
-const App = () => {
+
+function App() {
   return (
-    <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
-    </>
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/" exact activeClassName="active">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/pizza" activeClassName="active">Order a Pizza</NavLink>
+          </li>
+        </ul>
+      </nav>
+      <Switch>
+        <Route path="/pizza">
+          <PizzaForm />
+        </Route>
+        <Route path="/">
+          <h1>Welcome to our pizza shop!</h1>
+        </Route>
+      </Switch>
+    </div>
   );
-};
+}
+
 export default App;
