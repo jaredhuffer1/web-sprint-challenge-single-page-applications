@@ -9,6 +9,9 @@ function PizzaForm() {
             Mushroom: false,
             Onion: false,
             Sausage: false,
+            blackOlives: false,
+
+
         },
         special: ''
     });
@@ -27,6 +30,7 @@ function PizzaForm() {
                         <option value="Small">Small</option>
                         <option value="Medium">Medium</option>
                         <option value="Large">Large</option>
+                        <option value="NewYorkStyle">New York Style</option>
                     </select>
                 </label>
                 <br />
@@ -44,6 +48,12 @@ function PizzaForm() {
                     <br />
                     <input type="checkbox" checked={form.toppings.Sausage} onChange={() => setForm({ ...form, toppings: { ...form.toppings, Sausage: !form.toppings.Sausage } })} />
                     <span>Sausage</span>
+                    <br/>
+                    <input type="checkbox" checked={form.toppings.Pepperoni} onChange={() => setForm({ ...form, toppings: { ...form.toppings, Pepperoni: !form.toppings.Pepperoni } })} />
+                    <span></span>
+                    <br/>
+                    <input type="checkbox" checked={form.toppings.blackOlives} onChange={() => setForm({ ...form, toppings: { ...form.toppings, blackOlives: !form.toppings.blackOlives } })} />
+                    <span>Black Olives </span>
                 </label>
                 <br />
                 <label>

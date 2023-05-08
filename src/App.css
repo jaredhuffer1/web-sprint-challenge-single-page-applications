@@ -1,0 +1,74 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
+  }
+  
+  .App-header {
+    background-color: #f44336;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .App-header h1 {
+    font-size: 48px;
+    color: white;
+    margin: 0;
+  }
+  
+  .pizza-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+  }
+  
+  .pizza-link {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .pizza-link:hover {
+    text-decoration: underline;
+  }
+  
+  .App-footer {
+    background-color: #f44336;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pizza-links-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+  }
+  
+  .pizza-link-footer {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .pizza-link-footer:hover {
+    text-decoration: underline;
+  }
+  
