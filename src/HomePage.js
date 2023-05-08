@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
@@ -8,6 +9,9 @@ function HomePage() {
         We offer a variety of pizza toppings to suit everyone's taste buds.
         Click on the links above to place your order or to see our featured items.
       </p>
+      <Link to="/pizza" id="order-pizza">
+        Order Pizza
+      </Link>
     </div>
   );
 }
