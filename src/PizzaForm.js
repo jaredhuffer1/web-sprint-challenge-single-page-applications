@@ -29,7 +29,7 @@ function PizzaForm() {
   
     const handleSubmit = (event) => {
         event.preventDefault();
-      
+        
         // check if name is at least 2 characters long
         if (name.length < 2) {
           // display error message
@@ -37,15 +37,16 @@ function PizzaForm() {
           errorMessage.style.display = 'block';
           return;
         }
-      
+        
         const order = {
           name,
           size,
           toppings,
           specialInstructions,
         };
-      
+        
         console.log(order);
+        
         fetch('https://reqres.in/api/orders', {
           method: 'POST',
           headers: {
@@ -53,16 +54,17 @@ function PizzaForm() {
           },
           body: JSON.stringify(order),
         })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log('Success:', data);
-            alert('Your order has been submitted successfully!');
-          })
-          .catch((error) => {
-            console.error('Error:', error);
-            alert('There was an error submitting your order. Please try again.');
-          });
+        .then((response) => response.json())
+        .then((data) => {
+          console.log('Success:', data);
+          alert('Your order has been submitted successfully!');
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          alert('There was an error submitting your order. Please try again.');
+        });
       };
+      
       
       
       
@@ -102,10 +104,10 @@ function PizzaForm() {
         <label htmlFor="special-text">Special Instructions:</label>
         <textarea id="special-text" value={specialInstructions} onChange={handleSpecialInstructionsChange} />
   
-        <button type="submit">Submit Order</button>
+        <button id="order-button" type="submit">Submit Order</button>
+
       </form>
     );
   }
   
   export default PizzaForm;
-  

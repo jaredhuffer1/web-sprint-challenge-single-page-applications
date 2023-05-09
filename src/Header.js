@@ -1,21 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/pizza">Order a pizza</Link>
-          </li>
-        </ul>
-      </nav>
+      <h1>Delicious Pizza Shop</h1>
     </header>
   );
 }
 
 export default Header;
+
+
+
