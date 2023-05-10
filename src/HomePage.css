@@ -1,0 +1,40 @@
+.home-page {
+    text-align: center;
+      /* Replace with your own image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-page h2 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  .home-page p {
+    font-size: 1.5em;
+    max-width: 500px;
+    text-shadow: 1px 1px 2px #000000;
+  }
+  
+  #order-pizza {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    text-shadow: none;
+  }
+  
+  #order-pizza:hover {
+    background-color: #cc0000;
+  }
+  

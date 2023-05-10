@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import HomePage from './HomePage';
 import PizzaForm from './PizzaForm';
 import Header from './Header';
@@ -14,9 +14,9 @@ function App() {
       <Header>
         <h1>Delicious Pizza Shop</h1>
         <div className="pizza-links">
-          <a href="#">Pepperoni</a>
-          <a href="#">Mushroom</a>
-          <a href="#">Sausage</a>
+          <Link to="/pizza">Pepperoni</Link>
+          <Link to="/pizza">Mushroom</Link>
+          <Link to="/pizza">Sausage</Link>
         </div>
       </Header>
       <Routes>
@@ -26,9 +26,9 @@ function App() {
       </Routes>
       <Footer>
         <div className="pizza-links-footer">
-          <a href="#">Hawaiian</a>
-          <a href="#">Meat Lovers</a>
-          <a href="#">Veggie</a>
+          <Link to="/pizza">Hawaiian</Link>
+          <Link to="/pizza">Meat Lovers</Link>
+          <Link to="/pizza">Veggie</Link>
         </div>
         <p>Delicious Pizza Shop &copy; 2023</p>
       </Footer>

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './HomePage.css';
 
 function HomePage() {
   return (
-    <div>
+    <div className="home-page">
       <h2>Welcome to the Delicious Pizza Shop!</h2>
       <p>
         We offer a variety of pizza toppings to suit everyone's taste buds.
